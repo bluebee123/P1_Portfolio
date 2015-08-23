@@ -1,0 +1,122 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+
+
+.container {
+	font-family: Verdana;
+	width: 100%;
+	color: #747704;
+}
+/*header*/
+.title-row {
+    width: 100%;
+    border-bottom: solid #bcbbbb;
+    display: flex;
+}
+
+.whoamI {
+	width: 100%;
+	margin-top: 30px;
+	text-align: right;
+}
+/*main content*/
+.content {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.description {
+	border-bottom: solid #bcbbbb;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.sometext {
+	max-width: 600px;
+	margin: auto;
+	text-align: left;
+	
+}
+.list {
+	color: #339966;
+}
+/*featured work*/
+.features {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.features-segment {
+	text-align: center;
+	width: 100%;
+}
+
+.features-pic {
+	max-width: 100%;
+}
+
+.features-title-box {
+	text-align: center;
+}
+
+.featurespic-where {
+	font-size: x-small;
+	/*make the links well clickable*/
+	height: 48px;
+}
+
+/* images max width: 310 px;
+/* the screen can fit two images and leaves some space in between considering 
+the margins
+*/
+@media screen and (min-width: 660px) {
+    .segA, .segB {
+		width: calc((100% - 10px)/2);
+	}
+
+	.segC {
+		width: 100%;
+	}
+}
+/*if screen is big enough for the three images to be next to each other*/
+
+@media screen and (min-width: 980px) {
+	/* a different order so the pictures don't move around too much, the one
+	which was below the other two shifts into the center.*/
+	.segA {
+		width: calc((100% - 20px)/3);
+		margin-right: 10px;
+		order: 0;
+	}
+
+	.segC {
+		width: calc((100% - 20px)/3);
+		order: 1;
+		margin-right: 10px;
+	}
+
+	.segB{
+		width: calc((100% - 20px)/3);
+		order: 2;
+	}
+}
+
+/*if 1050px width is reached, a margin is added so it doesn't get any broader
+*/
+@media screen and (min-width: 1050px) {
+	.container{
+		width: 1050px;
+		margin: auto;
+	}
+}

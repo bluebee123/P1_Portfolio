@@ -9,8 +9,6 @@ img, embed, object, video {
 	max-width: 100%;
 }
 
-
-
 .container {
 	font-family: Verdana;
 	width: 100%;
@@ -18,9 +16,9 @@ img, embed, object, video {
 }
 /*header*/
 .title-row {
-    width: 100%;
-    border-bottom: solid #bcbbbb;
-    display: flex;
+	width: 100%;
+	border-bottom: solid #bcbbbb;
+	display: flex;
 }
 
 .whoamI {
@@ -81,7 +79,7 @@ img, embed, object, video {
 the margins
 */
 @media screen and (min-width: 660px) {
-    .segA, .segB {
+	.segA, .segB {
 		width: calc((100% - 10px)/2);
 	}
 

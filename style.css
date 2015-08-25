@@ -82,38 +82,36 @@ video {
 the margins
 */
 @media screen and (min-width: 660px) {
-	.sega,
-	.segb {
+	.seg-a,
+	.seg-b {
 		width: calc((100% - 10px)/2);
 	}
 
-	.segc {
+	.seg-c {
 		width: 100%;
 	}
 }
 /*if screen is big enough for the three images to be next to each other*/
-
 @media screen and (min-width: 980px) {
 	/* a different order so the pictures don't move around too much, the one
 	which was below the other two shifts into the center.*/
-	.sega {
+	.seg-a {
 		width: calc((100% - 20px)/3);
 		margin-right: 10px;
 		order: 0;
 	}
 
-	.segc {
+	.seg-c {
 		width: calc((100% - 20px)/3);
 		order: 1;
 		margin-right: 10px;
 	}
 
-	.segb {
+	.seg-b {
 		width: calc((100% - 20px)/3);
 		order: 2;
 	}
 }
-
 /*if 1050px width is reached, a margin is added so it doesn't get any broader
 */
 @media screen and (min-width: 1050px) {

@@ -5,7 +5,10 @@
 	box-sizing: border-box;
 }
 
-img, embed, object, video {
+img,
+embed,
+object,
+video {
 	max-width: 100%;
 }
 
@@ -21,7 +24,7 @@ img, embed, object, video {
 	display: flex;
 }
 
-.whoamI {
+.who-am-i {
 	width: 100%;
 	margin-top: 30px;
 	text-align: right;
@@ -38,12 +41,12 @@ img, embed, object, video {
 	line-height: 1.2em;
 }
 
-.sometext {
+.some-text {
 	max-width: 600px;
 	margin: auto;
 	text-align: left;
-	
 }
+
 .list {
 	color: #339966;
 }
@@ -75,7 +78,7 @@ img, embed, object, video {
 }
 
 /* images max width: 310 px;
-/* the screen can fit two images and leaves some space in between considering 
+/* the screen can fit two images and leaves some space in between considering
 the margins
 */
 @media screen and (min-width: 660px) {
@@ -105,7 +108,7 @@ the margins
 		margin-right: 10px;
 	}
 
-	.segb{
+	.segb {
 		width: calc((100% - 20px)/3);
 		order: 2;
 	}
@@ -114,7 +117,7 @@ the margins
 /*if 1050px width is reached, a margin is added so it doesn't get any broader
 */
 @media screen and (min-width: 1050px) {
-	.container{
+	.container {
 		width: 1050px;
 		margin: auto;
 	}
